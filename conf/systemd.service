@@ -1,15 +1,15 @@
 [Unit]
-Description=Small description of the service
+Description=Batnoter
 After=network.target
 
 [Service]
 Type=simple
 User=__APP__
 Group=__APP__
+Environment="PATH=__ENV_PATH__"
+Environment="NODE_ENV=production"
 WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/script
-StandardOutput=append:/var/log/__APP__/__APP__.log
-StandardError=inherit
+ExecStart=/usr/bin/yarn start 
 
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these
