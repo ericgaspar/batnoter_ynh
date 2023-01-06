@@ -1,5 +1,5 @@
-SOURCE_URL=url of app's source
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=https://github.com/batnoter/batnoter/archive/refs/tags/v1.0.0.tar.gz
+SOURCE_SUM=5e96e6c866539750cbd715898cee999ac232f7456209a416d2c709f3a895730d
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
