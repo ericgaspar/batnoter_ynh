@@ -9,7 +9,7 @@ Group=__APP__
 Environment="PATH=__ENV_PATH__"
 Environment="NODE_ENV=production"
 WorkingDirectory=__FINALPATH__/
-ExecStart=/usr/bin/yarn start 
+ExecStart=/usr/bin/yarn start -p __PORT__
 
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these
